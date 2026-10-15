@@ -5,10 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lil Dom | Visuals & Sound</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Emo / Musician Schreibschrift (Herr Von Muellerhoff & Great Vibes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+  <style>
+    /* Custom Emo Schreibschrift-Klasse */
+    .font-emo-script {
+      font-family: 'Herr Von Muellerhoff', 'Great Vibes', cursive;
+    }
+  </style>
 </head>
 <body class="bg-neutral-950 text-neutral-100 font-sans antialiased selection:bg-neutral-800 selection:text-white">
   
-  <!-- Sprachumschalter (Oben rechts auf dem Bild) -->
+  <!-- Sprachumschalter (Oben rechts) -->
   <div class="absolute top-6 right-6 z-20 flex space-x-1 bg-black/50 backdrop-blur-md p-1 rounded-full border border-white/10">
     <button id="btn-de" onclick="switchLang('de')" class="px-3 py-1 text-xs font-semibold rounded-full bg-white text-black transition">DE</button>
     <button id="btn-en" onclick="switchLang('en')" class="px-3 py-1 text-xs font-semibold rounded-full bg-black/40 text-white transition">EN</button>
@@ -18,22 +30,22 @@
   <header class="relative w-full h-screen flex flex-col items-center justify-between text-center bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1920&auto=format&fit=crop');">
     
     <!-- Abdunkelnder Filter über dem Bild -->
-    <div class="absolute inset-0 bg-black/50 bg-gradient-to-b from-black/60 via-black/20 to-neutral-950"></div>
+    <div class="absolute inset-0 bg-black/60 bg-gradient-to-b from-black/70 via-black/30 to-neutral-950"></div>
 
     <!-- Platzhalter oben für gute Zentrierung -->
     <div class="relative z-10 pt-10"></div>
 
-    <!-- Haupt-Titel in der Mitte des Bildes -->
+    <!-- Haupt-Titel in Emo-Schreibschrift -->
     <div class="relative z-10 px-6 max-w-4xl">
-      <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tight text-white mb-4 drop-shadow-lg">
+      <h1 class="text-7xl sm:text-9xl font-emo-script font-normal tracking-wide text-white mb-2 drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)]">
         Lil Dom
       </h1>
-      <p class="text-lg sm:text-2xl text-neutral-200 font-light tracking-wide max-w-xl mx-auto drop-shadow">
+      <p class="text-base sm:text-xl text-neutral-300 font-light tracking-widest uppercase max-w-xl mx-auto drop-shadow">
         Visuals, Sound & Creative Direction
       </p>
     </div>
 
-    <!-- Social Links & Scroll-Indikator unten im Vollbild -->
+    <!-- Social Links & Scroll-Indikator unten -->
     <div class="relative z-10 pb-8 flex flex-col items-center space-y-6">
       <div class="flex space-x-3">
         <a href="https://instagram.com" target="_blank" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full backdrop-blur-md transition">Instagram</a>
@@ -75,6 +87,64 @@
       </div>
     </section>
 
+    <!-- ================================================================= -->
+    <!-- INSTAGRAM FEED SECTION (NEUESTE POSTS)                            -->
+    <!-- ================================================================= -->
+    <section class="pt-2">
+      <div class="flex items-center justify-between mb-6 border-b border-neutral-900 pb-3">
+        <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500">
+          <span class="lang-de">Instagram Feed</span>
+          <span class="lang-en hidden">Instagram Feed</span>
+        </h2>
+        <a href="https://instagram.com" target="_blank" class="text-xs text-neutral-400 hover:text-white transition">
+          @lildom ↗
+        </a>
+      </div>
+
+      <!-- 
+        ===================================================================
+        ANLEITUNG FÜR DEINE INSTAGRAM API / WIDGET EINBINDUNG:
+        ===================================================================
+        Option 1 (Sehr einfach & kostenlos - Empfohlen):
+        Nutze einen Dienst wie behold.so oder elfsight.com. 
+        Ersetze den nachfolgenden <div> Block einfach mit dem <script> / <div> Code,
+        den dir der Dienst generiert.
+
+        Option 2 (Direkt via Instagram Basic Display API):
+        Setze deinen User Access Token in das JavaScript unten im Script-Tag ein.
+        ===================================================================
+      -->
+
+      <!-- INSTAGRAM CONTAINER / PLACEHOLDER GRID -->
+      <div id="instagram-feed" class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        
+        <!-- Post Placeholder 1 -->
+        <div class="aspect-square bg-neutral-900/60 rounded-xl border border-neutral-800/60 overflow-hidden flex flex-col items-center justify-center p-3 text-center group hover:border-neutral-700 transition">
+          <span class="text-neutral-600 text-xs font-mono">Post #1</span>
+          <span class="text-[10px] text-neutral-700 mt-1">[API Embed Spot]</span>
+        </div>
+
+        <!-- Post Placeholder 2 -->
+        <div class="aspect-square bg-neutral-900/60 rounded-xl border border-neutral-800/60 overflow-hidden flex flex-col items-center justify-center p-3 text-center group hover:border-neutral-700 transition">
+          <span class="text-neutral-600 text-xs font-mono">Post #2</span>
+          <span class="text-[10px] text-neutral-700 mt-1">[API Embed Spot]</span>
+        </div>
+
+        <!-- Post Placeholder 3 -->
+        <div class="aspect-square bg-neutral-900/60 rounded-xl border border-neutral-800/60 overflow-hidden flex flex-col items-center justify-center p-3 text-center group hover:border-neutral-700 transition">
+          <span class="text-neutral-600 text-xs font-mono">Post #3</span>
+          <span class="text-[10px] text-neutral-700 mt-1">[API Embed Spot]</span>
+        </div>
+
+        <!-- Post Placeholder 4 -->
+        <div class="aspect-square bg-neutral-900/60 rounded-xl border border-neutral-800/60 overflow-hidden flex flex-col items-center justify-center p-3 text-center group hover:border-neutral-700 transition">
+          <span class="text-neutral-600 text-xs font-mono">Post #4</span>
+          <span class="text-[10px] text-neutral-700 mt-1">[API Embed Spot]</span>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Music / Releases -->
     <section>
       <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500 mb-6 border-b border-neutral-900 pb-3">
@@ -113,7 +183,7 @@
     <p>© 2026 Lil Dom. <span class="lang-de">Alle Rechte vorbehalten.</span><span class="lang-en hidden">All rights reserved.</span></p>
   </footer>
 
-  <!-- Umschalt-Skript für die Sprachen -->
+  <!-- Umschalt-Skript für Sprachen & Instagram API Placeholder -->
   <script>
     function switchLang(lang) {
       const btnDe = document.getElementById('btn-de');
@@ -141,6 +211,38 @@
         btnDe.classList.remove('bg-black/40', 'text-white');
       }
     }
+
+    /* 
+      ===================================================================
+      INSTAGRAM API FETCH SKRIPT (OPTIONAL):
+      Falls du die offizielle Instagram Basic Display API nutzen möchtest,
+      kannst du deinen Access Token hier eintragen:
+      ===================================================================
+      
+      const INSTAGRAM_ACCESS_TOKEN = 'DEIN_INSTAGRAM_ACCESS_TOKEN_HIER';
+      
+      if (INSTAGRAM_ACCESS_TOKEN && INSTAGRAM_ACCESS_TOKEN !== 'DEIN_INSTAGRAM_ACCESS_TOKEN_HIER') {
+        fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url&access_token=${INSTAGRAM_ACCESS_TOKEN}`)
+          .then(res => res.json())
+          .then(data => {
+            if (data.data) {
+              const container = document.getElementById('instagram-feed');
+              container.innerHTML = ''; // Platzhalter leeren
+              
+              data.data.slice(0, 4).forEach(post => {
+                const imgUrl = post.media_type === 'VIDEO' ? post.thumbnail_url : post.media_url;
+                const postElement = `
+                  <a href="${post.permalink}" target="_blank" class="aspect-square bg-neutral-900 rounded-xl overflow-hidden border border-neutral-800 hover:border-neutral-600 transition group relative">
+                    <img src="${imgUrl}" alt="${post.caption || 'Instagram Post'}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                  </a>
+                `;
+                container.innerHTML += postElement;
+              });
+            }
+          })
+          .catch(err => console.log('Instagram API Fehler:', err));
+      }
+    */
   </script>
 
 </body>
