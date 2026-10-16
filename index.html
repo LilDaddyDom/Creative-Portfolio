@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lil Dom | Visuals & Sound</title>
+
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts: Emo / Musician Schreibschrift (Herr Von Muellerhoff & Great Vibes) -->
+  <!-- Google Fonts: Emo / Musician Schreibschrift -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
   <style>
-    /* Custom Emo Schreibschrift-Klasse */
     .font-emo-script {
       font-family: 'Herr Von Muellerhoff', 'Great Vibes', cursive;
     }
@@ -29,10 +30,8 @@
   <!-- Vollbild Title / Hero Section -->
   <header class="relative w-full h-screen flex flex-col items-center justify-between text-center bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1920&auto=format&fit=crop');">
     
-    <!-- Abdunkelnder Filter über dem Bild -->
+    <!-- Dark Overlay -->
     <div class="absolute inset-0 bg-black/60 bg-gradient-to-b from-black/70 via-black/30 to-neutral-950"></div>
-
-    <!-- Platzhalter oben für gute Zentrierung -->
     <div class="relative z-10 pt-10"></div>
 
     <!-- Haupt-Titel in Emo-Schreibschrift -->
@@ -45,7 +44,7 @@
       </p>
     </div>
 
-    <!-- Social Links & Scroll-Indikator unten -->
+    <!-- Social Links & Scroll-Pfeil -->
     <div class="relative z-10 pb-8 flex flex-col items-center space-y-6">
       <div class="flex space-x-3">
         <a href="https://instagram.com" target="_blank" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full backdrop-blur-md transition">Instagram</a>
@@ -56,7 +55,6 @@
         </a>
       </div>
 
-      <!-- Hüpfender Pfeil nach unten -->
       <a href="#content" class="text-neutral-400 hover:text-white transition animate-bounce pt-2" title="Nach unten scrollen">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -65,7 +63,7 @@
     </div>
   </header>
 
-  <!-- Bereich unter dem Vollbild -->
+  <!-- Main Content -->
   <main id="content" class="max-w-4xl mx-auto px-6 space-y-16 pt-16 pb-24">
     
     <!-- Portfolio / Sedcard -->
@@ -87,10 +85,8 @@
       </div>
     </section>
 
-    <!-- ================================================================= -->
-    <!-- INSTAGRAM FEED SECTION (NEUESTE POSTS)                            -->
-    <!-- ================================================================= -->
-    <section class="pt-2">
+    <!-- Instagram Feed -->
+    <section>
       <div class="flex items-center justify-between mb-6 border-b border-neutral-900 pb-3">
         <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500">
           <span class="lang-de">Instagram Feed</span>
@@ -101,67 +97,130 @@
         </a>
       </div>
 
-      <!-- 
-        ===================================================================
-        ANLEITUNG FÜR DEINE INSTAGRAM API / WIDGET EINBINDUNG:
-        ===================================================================
-        Option 1 (Sehr einfach & kostenlos - Empfohlen):
-        Nutze einen Dienst wie behold.so oder elfsight.com. 
-        Ersetze den nachfolgenden <div> Block einfach mit dem <script> / <div> Code,
-        den dir der Dienst generiert.
-
-        Option 2 (Direkt via Instagram Basic Display API):
-        Setze deinen User Access Token in das JavaScript unten im Script-Tag ein.
-        ===================================================================
-      -->
-
-      <!-- INSTAGRAM CONTAINER / PLACEHOLDER GRID -->
       <div id="instagram-feed" class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        
-        <!-- Post Placeholder 1 -->
-        <div class="aspect-square bg-neutral-900/60 rounded-xl border border-neutral-800/60 overflow-hidden flex flex-col items-center justify-center p-3 text-center group hover:border-neutral-700 transition">
+        <div class="aspect-square bg-neutral-900/60 rounded-xl border border-neutral-800/60 flex flex-col items-center justify-center p-3 text-center">
           <span class="text-neutral-600 text-xs font-mono">Post #1</span>
-          <span class="text-[10px] text-neutral-700 mt-1">[API Embed Spot]</span>
         </div>
-
-        <!-- Post Placeholder 2 -->
-        <div class="aspect-square bg-neutral-900/60 rounded-xl border border-neutral-800/60 overflow-hidden flex flex-col items-center justify-center p-3 text-center group hover:border-neutral-700 transition">
+        <div class="aspect-square bg-neutral-900/60 rounded-xl border border-neutral-800/60 flex flex-col items-center justify-center p-3 text-center">
           <span class="text-neutral-600 text-xs font-mono">Post #2</span>
-          <span class="text-[10px] text-neutral-700 mt-1">[API Embed Spot]</span>
         </div>
-
-        <!-- Post Placeholder 3 -->
-        <div class="aspect-square bg-neutral-900/60 rounded-xl border border-neutral-800/60 overflow-hidden flex flex-col items-center justify-center p-3 text-center group hover:border-neutral-700 transition">
+        <div class="aspect-square bg-neutral-900/60 rounded-xl border border-neutral-800/60 flex flex-col items-center justify-center p-3 text-center">
           <span class="text-neutral-600 text-xs font-mono">Post #3</span>
-          <span class="text-[10px] text-neutral-700 mt-1">[API Embed Spot]</span>
         </div>
-
-        <!-- Post Placeholder 4 -->
-        <div class="aspect-square bg-neutral-900/60 rounded-xl border border-neutral-800/60 overflow-hidden flex flex-col items-center justify-center p-3 text-center group hover:border-neutral-700 transition">
+        <div class="aspect-square bg-neutral-900/60 rounded-xl border border-neutral-800/60 flex flex-col items-center justify-center p-3 text-center">
           <span class="text-neutral-600 text-xs font-mono">Post #4</span>
-          <span class="text-[10px] text-neutral-700 mt-1">[API Embed Spot]</span>
         </div>
-
       </div>
     </section>
 
-    <!-- Music / Releases -->
+    <!-- Music / Song Releases -->
     <section>
       <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500 mb-6 border-b border-neutral-900 pb-3">
         <span class="lang-de">Releases & Musik</span>
         <span class="lang-en hidden">Releases & Discography</span>
       </h2>
-      <div class="space-y-3">
-        <div class="p-5 bg-neutral-900/50 rounded-2xl border border-neutral-800/60 flex items-center justify-between hover:border-neutral-700 transition">
-          <div>
-            <h3 class="font-bold text-base text-neutral-200">Release Title #1</h3>
-            <p class="text-xs text-neutral-500 mt-0.5">Single • 2024</p>
+
+      <div class="space-y-4">
+        
+        <!-- Song 1 -->
+        <div class="p-4 sm:p-5 bg-neutral-900/50 rounded-2xl border border-neutral-800/60 flex items-center justify-between hover:border-neutral-700 transition">
+          <div class="flex items-center space-x-4">
+            <div class="w-12 h-12 bg-neutral-800 rounded-xl flex items-center justify-center text-xs text-neutral-500 font-mono">Cover</div>
+            <div>
+              <h3 class="font-bold text-base text-neutral-100">Song Name #1</h3>
+              <p class="text-xs text-neutral-500 mt-0.5">Single • 2024</p>
+            </div>
           </div>
-          <a href="#" target="_blank" class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-xs font-medium rounded-xl transition">
+          <button onclick="openMusicModal('Song Name #1', 'https://open.spotify.com', 'https://music.apple.com', 'https://youtube.com', 'https://soundcloud.com')" class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-xs font-medium rounded-xl transition text-neutral-200">
             <span class="lang-de">Anhören</span>
             <span class="lang-en hidden">Listen</span>
-          </a>
+          </button>
         </div>
+
+        <!-- Song 2 -->
+        <div class="p-4 sm:p-5 bg-neutral-900/50 rounded-2xl border border-neutral-800/60 flex items-center justify-between hover:border-neutral-700 transition">
+          <div class="flex items-center space-x-4">
+            <div class="w-12 h-12 bg-neutral-800 rounded-xl flex items-center justify-center text-xs text-neutral-500 font-mono">Cover</div>
+            <div>
+              <h3 class="font-bold text-base text-neutral-100">Song Name #2</h3>
+              <p class="text-xs text-neutral-500 mt-0.5">Single • 2023</p>
+            </div>
+          </div>
+          <button onclick="openMusicModal('Song Name #2', 'https://open.spotify.com', 'https://music.apple.com', 'https://youtube.com', 'https://soundcloud.com')" class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-xs font-medium rounded-xl transition text-neutral-200">
+            <span class="lang-de">Anhören</span>
+            <span class="lang-en hidden">Listen</span>
+          </button>
+        </div>
+
+        <!-- Song 3 -->
+        <div class="p-4 sm:p-5 bg-neutral-900/50 rounded-2xl border border-neutral-800/60 flex items-center justify-between hover:border-neutral-700 transition">
+          <div class="flex items-center space-x-4">
+            <div class="w-12 h-12 bg-neutral-800 rounded-xl flex items-center justify-center text-xs text-neutral-500 font-mono">Cover</div>
+            <div>
+              <h3 class="font-bold text-base text-neutral-100">Song Name #3</h3>
+              <p class="text-xs text-neutral-500 mt-0.5">EP / Single • 2023</p>
+            </div>
+          </div>
+          <button onclick="openMusicModal('Song Name #3', 'https://open.spotify.com', 'https://music.apple.com', 'https://youtube.com', 'https://soundcloud.com')" class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-xs font-medium rounded-xl transition text-neutral-200">
+            <span class="lang-de">Anhören</span>
+            <span class="lang-en hidden">Listen</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Musik Historie / Journey Timeline -->
+    <section>
+      <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500 mb-8 border-b border-neutral-900 pb-3">
+        <span class="lang-de">Musik Historie / Journey</span>
+        <span class="lang-en hidden">Music History / Journey</span>
+      </h2>
+
+      <div class="relative border-l border-neutral-800 ml-3 pl-6 space-y-8">
+        
+        <!-- Timeline Item 1 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-white rounded-full border-2 border-neutral-950 shadow"></div>
+          <span class="text-xs font-mono uppercase tracking-widest text-neutral-500">2024 — Present</span>
+          <h3 class="text-base font-bold text-neutral-200 mt-1">
+            <span class="lang-de">Einfluss & Creative Direction</span>
+            <span class="lang-en hidden">Evolving & Creative Direction</span>
+          </h3>
+          <p class="text-sm text-neutral-400 mt-1 font-light leading-relaxed">
+            <span class="lang-de">Verbindung von musikalischen Elementen mit visueller Kunst, Modeling und eigenen Creative-Projekten.</span>
+            <span class="lang-en hidden">Combining musical aesthetics with visual arts, modeling, and personal creative direction.</span>
+          </p>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-neutral-600 rounded-full border-2 border-neutral-950"></div>
+          <span class="text-xs font-mono uppercase tracking-widest text-neutral-500">2022 — 2023</span>
+          <h3 class="text-base font-bold text-neutral-200 mt-1">
+            <span class="lang-de">Erste Veröffentlichungen & Single-Releases</span>
+            <span class="lang-en hidden">First Releases & Singles</span>
+          </h3>
+          <p class="text-sm text-neutral-400 mt-1 font-light leading-relaxed">
+            <span class="lang-de">Veröffentlichung der ersten eigenen Songs auf allen bekannten Streaming-Plattformen.</span>
+            <span class="lang-en hidden">Official release of first original songs across all major streaming platforms.</span>
+          </p>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-neutral-800 rounded-full border-2 border-neutral-950"></div>
+          <span class="text-xs font-mono uppercase tracking-widest text-neutral-500">2021</span>
+          <h3 class="text-base font-bold text-neutral-200 mt-1">
+            <span class="lang-de">Die Anfänge & Songwriting</span>
+            <span class="lang-en hidden">The Beginnings & Production</span>
+          </h3>
+          <p class="text-sm text-neutral-400 mt-1 font-light leading-relaxed">
+            <span class="lang-de">Erste Studio-Sessions, Experimente mit Sound-Designs und Entwicklung der künstlerischen Identität.</span>
+            <span class="lang-en hidden">First studio sessions, sound experiments, and shaping the core artistic sound.</span>
+          </p>
+        </div>
+
       </div>
     </section>
 
@@ -172,19 +231,65 @@
         <span class="lang-en hidden">About Me</span>
       </h2>
       <p class="text-neutral-400 leading-relaxed font-light">
-        <span class="lang-de">Kurze Beschreibung deiner kreativen Identität, deiner Ästhetik und deinen Projekten.</span>
-        <span class="lang-en hidden">Brief description of your creative identity, aesthetics, and projects.</span>
+        <span class="lang-de">Lil Dom ist ein kreatives Projekt an der Schnittstelle von Sound, visueller Ästhetik und Lifestyle.</span>
+        <span class="lang-en hidden">Lil Dom is a creative project merging sound aesthetics, visual direction, and lifestyle.</span>
       </p>
     </section>
 
   </main>
 
+  <!-- Footer -->
   <footer class="border-t border-neutral-900 py-8 text-center text-xs text-neutral-600">
     <p>© 2026 Lil Dom. <span class="lang-de">Alle Rechte vorbehalten.</span><span class="lang-en hidden">All rights reserved.</span></p>
   </footer>
 
-  <!-- Umschalt-Skript für Sprachen & Instagram API Placeholder -->
+  <!-- Multi-Platform Streaming Pop-Up Modal -->
+  <div id="music-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+    <div class="bg-neutral-900 border border-neutral-800 rounded-3xl p-6 sm:p-8 max-w-sm w-full relative shadow-2xl">
+      
+      <!-- Close Button -->
+      <button onclick="closeMusicModal()" class="absolute top-4 right-4 text-neutral-500 hover:text-white text-lg p-2 transition">
+        ✕
+      </button>
+
+      <div class="text-center mb-6">
+        <div class="w-16 h-16 bg-neutral-800 rounded-2xl mx-auto mb-3 flex items-center justify-center text-2xl">
+          🎵
+        </div>
+        <h3 id="modal-song-title" class="text-lg font-bold text-white">Song Title</h3>
+        <p class="text-xs text-neutral-400 mt-1">
+          <span class="lang-de">Wähle deine bevorzugte Musik-Plattform:</span>
+          <span class="lang-en hidden">Choose your preferred streaming platform:</span>
+        </p>
+      </div>
+
+      <!-- Platform Links -->
+      <div class="space-y-2.5">
+        <a id="link-spotify" href="#" target="_blank" class="flex items-center justify-between p-3.5 bg-neutral-800/80 hover:bg-neutral-800 rounded-xl border border-neutral-700/50 transition">
+          <span class="text-sm font-semibold text-white flex items-center gap-2">🟢 Spotify</span>
+          <span class="text-xs text-neutral-400">Öffnen ↗</span>
+        </a>
+        <a id="link-apple" href="#" target="_blank" class="flex items-center justify-between p-3.5 bg-neutral-800/80 hover:bg-neutral-800 rounded-xl border border-neutral-700/50 transition">
+          <span class="text-sm font-semibold text-white flex items-center gap-2">🍎 Apple Music</span>
+          <span class="text-xs text-neutral-400">Öffnen ↗</span>
+        </a>
+        <a id="link-youtube" href="#" target="_blank" class="flex items-center justify-between p-3.5 bg-neutral-800/80 hover:bg-neutral-800 rounded-xl border border-neutral-700/50 transition">
+          <span class="text-sm font-semibold text-white flex items-center gap-2">▶️ YouTube</span>
+          <span class="text-xs text-neutral-400">Öffnen ↗</span>
+        </a>
+        <a id="link-soundcloud" href="#" target="_blank" class="flex items-center justify-between p-3.5 bg-neutral-800/80 hover:bg-neutral-800 rounded-xl border border-neutral-700/50 transition">
+          <span class="text-sm font-semibold text-white flex items-center gap-2">☁️ SoundCloud</span>
+          <span class="text-xs text-neutral-400">Öffnen ↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- JAVASCRIPT LOGIK (Sprachumschaltung & Pop-Up Steuerung)           -->
+  <!-- ================================================================= -->
   <script>
+    // 1. Sprachumschaltung DE / EN
     function switchLang(lang) {
       const btnDe = document.getElementById('btn-de');
       const btnEn = document.getElementById('btn-en');
@@ -212,37 +317,39 @@
       }
     }
 
-    /* 
-      ===================================================================
-      INSTAGRAM API FETCH SKRIPT (OPTIONAL):
-      Falls du die offizielle Instagram Basic Display API nutzen möchtest,
-      kannst du deinen Access Token hier eintragen:
-      ===================================================================
-      
-      const INSTAGRAM_ACCESS_TOKEN = 'DEIN_INSTAGRAM_ACCESS_TOKEN_HIER';
-      
-      if (INSTAGRAM_ACCESS_TOKEN && INSTAGRAM_ACCESS_TOKEN !== 'DEIN_INSTAGRAM_ACCESS_TOKEN_HIER') {
-        fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url&access_token=${INSTAGRAM_ACCESS_TOKEN}`)
-          .then(res => res.json())
-          .then(data => {
-            if (data.data) {
-              const container = document.getElementById('instagram-feed');
-              container.innerHTML = ''; // Platzhalter leeren
-              
-              data.data.slice(0, 4).forEach(post => {
-                const imgUrl = post.media_type === 'VIDEO' ? post.thumbnail_url : post.media_url;
-                const postElement = `
-                  <a href="${post.permalink}" target="_blank" class="aspect-square bg-neutral-900 rounded-xl overflow-hidden border border-neutral-800 hover:border-neutral-600 transition group relative">
-                    <img src="${imgUrl}" alt="${post.caption || 'Instagram Post'}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                  </a>
-                `;
-                container.innerHTML += postElement;
-              });
-            }
-          })
-          .catch(err => console.log('Instagram API Fehler:', err));
+    // 2. Pop-Up Modal Öffnen
+    function openMusicModal(title, spotify, apple, youtube, soundcloud) {
+      document.getElementById('modal-song-title').innerText = title;
+      document.getElementById('link-spotify').href = spotify || '#';
+      document.getElementById('link-apple').href = apple || '#';
+      document.getElementById('link-youtube').href = youtube || '#';
+      document.getElementById('link-soundcloud').href = soundcloud || '#';
+
+      const modal = document.getElementById('music-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    // 3. Pop-Up Modal Schließen
+    function closeMusicModal() {
+      const modal = document.getElementById('music-modal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+
+    // 4. Schließen per Klick außerhalb des Fensters oder mit ESC-Taste
+    window.onclick = function(event) {
+      const modal = document.getElementById('music-modal');
+      if (event.target === modal) {
+        closeMusicModal();
       }
-    */
+    };
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeMusicModal();
+      }
+    });
   </script>
 
 </body>
