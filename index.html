@@ -44,7 +44,7 @@
       </p>
     </div>
 
-    <!-- Social Links & Inner Circle Quick-Link -->
+    <!-- Header Social & Quick Links -->
     <div class="relative z-10 pb-8 flex flex-col items-center space-y-6">
       <div class="flex flex-wrap justify-center gap-2.5 px-4">
         <a href="https://instagram.com" target="_blank" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full backdrop-blur-md transition">Instagram</a>
@@ -68,7 +68,7 @@
   <main id="content" class="max-w-4xl mx-auto px-6 space-y-16 pt-16 pb-24">
     
     <!-- Portfolio / Sedcard -->
-    <section>
+    <section id="visuals">
       <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500 mb-6 border-b border-neutral-900 pb-3">
         <span class="lang-de">Visuals / Portfolio</span>
         <span class="lang-en hidden">Visuals / Portfolio</span>
@@ -87,7 +87,7 @@
     </section>
 
     <!-- Instagram Feed -->
-    <section>
+    <section id="instagram">
       <div class="flex items-center justify-between mb-6 border-b border-neutral-900 pb-3">
         <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500">
           <span class="lang-de">Instagram Feed</span>
@@ -115,7 +115,7 @@
     </section>
 
     <!-- Music / Song Releases -->
-    <section>
+    <section id="music">
       <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500 mb-6 border-b border-neutral-900 pb-3">
         <span class="lang-de">Releases & Musik</span>
         <span class="lang-en hidden">Releases & Discography</span>
@@ -170,7 +170,7 @@
     </section>
 
     <!-- Musik Historie / Journey Timeline -->
-    <section>
+    <section id="journey">
       <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500 mb-8 border-b border-neutral-900 pb-3">
         <span class="lang-de">Musik Historie / Journey</span>
         <span class="lang-en hidden">Music History / Journey</span>
@@ -221,7 +221,7 @@
       </div>
     </section>
 
-    <!-- INNER CIRCLE (NEWSLETTER / SPEICHER-FUNKTION) -->
+    <!-- Inner Circle (Newsletter) -->
     <section id="inner-circle" class="p-8 sm:p-10 bg-neutral-900/40 border border-neutral-800/80 rounded-3xl text-center relative overflow-hidden">
       <div class="absolute -top-12 -right-12 w-40 h-40 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
 
@@ -238,7 +238,6 @@
           <span class="lang-en hidden">Get exclusive updates on unreleased music, photoshoots, merch drops & private news.</span>
         </p>
 
-        <!-- FORMULAR (Sendet Daten an deinen Form-Endpoint wie Formspree) -->
         <form action="https://formspree.io/f/DEIN_FORMSPREE_KEY" method="POST" class="flex flex-col sm:flex-row gap-2 pt-2">
           <input 
             type="email" 
@@ -264,7 +263,7 @@
     </section>
 
     <!-- About -->
-    <section>
+    <section id="about">
       <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500 mb-6 border-b border-neutral-900 pb-3">
         <span class="lang-de">Über Mich</span>
         <span class="lang-en hidden">About Me</span>
@@ -277,9 +276,56 @@
 
   </main>
 
-  <!-- Footer -->
-  <footer class="border-t border-neutral-900 py-8 text-center text-xs text-neutral-600">
-    <p>© 2026 Lil Dom. <span class="lang-de">Alle Rechte vorbehalten.</span><span class="lang-en hidden">All rights reserved.</span></p>
+  <!-- ================================================================= -->
+  <!-- FOOTER SEKTION (MIT HEADER-REPLIKA & QUICK-LINKS)                 -->
+  <!-- ================================================================= -->
+  <footer class="border-t border-neutral-900 py-12 text-center text-xs text-neutral-500 space-y-6">
+    
+    <!-- 1. Header Buttons Replika im Footer -->
+    <div class="flex flex-wrap justify-center items-center gap-3 px-4 max-w-2xl mx-auto">
+      <a href="https://instagram.com" target="_blank" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
+        Instagram
+      </a>
+      <a href="https://spotify.com" target="_blank" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
+        Spotify
+      </a>
+      <a href="#inner-circle" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
+        Inner Circle
+      </a>
+      <a href="mailto:deine-email@beispiel.de" class="px-5 py-2.5 bg-white text-black hover:bg-neutral-200 font-semibold rounded-full transition">
+        <span class="lang-de">Kontakt</span>
+        <span class="lang-en hidden">Contact</span>
+      </a>
+    </div>
+
+    <!-- 2. Direkte Anker-Links zu den Abschnitten -->
+    <div class="flex flex-wrap justify-center items-center gap-3 text-neutral-400 text-xs pt-2">
+      <a href="#visuals" class="hover:text-white transition">
+        <span class="lang-de">Visuals</span>
+        <span class="lang-en hidden">Visuals</span>
+      </a>
+      <span class="text-neutral-700">•</span>
+      <a href="#music" class="hover:text-white transition">
+        <span class="lang-de">Musik</span>
+        <span class="lang-en hidden">Music</span>
+      </a>
+      <span class="text-neutral-700">•</span>
+      <a href="#journey" class="hover:text-white transition">
+        <span class="lang-de">Historie</span>
+        <span class="lang-en hidden">Journey</span>
+      </a>
+      <span class="text-neutral-700">•</span>
+      <a href="#about" class="hover:text-white transition">
+        <span class="lang-de">Über Mich</span>
+        <span class="lang-en hidden">About</span>
+      </a>
+    </div>
+
+    <!-- 3. Copyright Zeile -->
+    <div class="pt-6 border-t border-neutral-900/60 max-w-4xl mx-auto text-[11px] text-neutral-600">
+      <p>© 2026 Lil Dom. <span class="lang-de">Alle Rechte vorbehalten.</span><span class="lang-en hidden">All rights reserved.</span></p>
+    </div>
+
   </footer>
 
   <!-- Multi-Platform Streaming Pop-Up Modal -->
