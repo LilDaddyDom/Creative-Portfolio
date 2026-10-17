@@ -44,18 +44,40 @@
       </p>
     </div>
 
-    <!-- Header Social & Quick Links -->
+    <!-- Social & Quick Links im Header -->
     <div class="relative z-10 pb-8 flex flex-col items-center space-y-6">
-      <div class="flex flex-wrap justify-center gap-2.5 px-4">
-        <a href="https://instagram.com" target="_blank" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full backdrop-blur-md transition">Instagram</a>
-        <a href="https://spotify.com" target="_blank" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full transition">Spotify</a>
+      <div class="flex flex-wrap justify-center items-center gap-2.5 px-4">
+        
+        <!-- Instagram mit feinem Icon -->
+        <a href="https://instagram.com" target="_blank" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full backdrop-blur-md transition flex items-center gap-2">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          Instagram
+        </a>
+
+        <!-- Musik Anker (Führt zur eigenen Sektion) -->
+        <a href="#music" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full backdrop-blur-md transition">
+          <span class="lang-de">Musik</span>
+          <span class="lang-en hidden">Music</span>
+        </a>
+
         <a href="#podcast" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full backdrop-blur-md transition">Podcast</a>
+        
         <a href="#inner-circle" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full backdrop-blur-md transition">Inner Circle</a>
+        
         <a href="mailto:deine-email@beispiel.de" class="px-5 py-2.5 bg-white text-black hover:bg-neutral-200 text-sm font-semibold rounded-full transition">
           <span class="lang-de">Kontakt</span>
           <span class="lang-en hidden">Contact</span>
         </a>
       </div>
+
+      <a href="#content" class="text-neutral-400 hover:text-white transition animate-bounce pt-2" title="Nach unten scrollen">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
+    </div>
 
       <a href="#content" class="text-neutral-400 hover:text-white transition animate-bounce pt-2" title="Nach unten scrollen">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -393,66 +415,45 @@
 
   </main>
 
-  <!-- ================================================================= -->
-  <!-- FOOTER SEKTION (MIT HEADER-REPLIKA & QUICK-LINKS)                 -->
-  <!-- ================================================================= -->
-  <footer class="border-t border-neutral-900 py-12 text-center text-xs text-neutral-500 space-y-6">
+
+  <!-- FOOTER SEKTION (Minimalistisch) -->
+  <footer class="border-t border-neutral-900 py-10 text-center text-xs text-neutral-500 space-y-6">
     
-<!-- Header-Buttons Replika -->
-  <div class="flex flex-wrap justify-center items-center gap-3 px-4 max-w-2xl mx-auto">
-    <a href="https://instagram.com" target="_blank" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
-      Instagram
-    </a>
-    <a href="https://spotify.com" target="_blank" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
-      Spotify
-    </a>
-    <a href="#podcast" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
-      Podcast
-    </a>
-    <a href="#inner-circle" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
-      Inner Circle
-    </a>
-    <a href="mailto:deine-email@beispiel.de" class="px-5 py-2.5 bg-white text-black hover:bg-neutral-200 font-semibold rounded-full transition">
-      <span class="lang-de">Kontakt</span>
-      <span class="lang-en hidden">Contact</span>
-    </a>
-  </div>
+    <!-- Eine einzige, aufgeräumte Navigationszeile -->
+    <div class="flex flex-wrap justify-center items-center gap-3 text-neutral-400 text-xs px-4">
+      <a href="https://instagram.com" target="_blank" class="hover:text-white transition">Instagram ↗</a>
+      <span class="text-neutral-800">•</span>
+      <a href="#visuals" class="hover:text-white transition">
+        <span class="lang-de">Visuals</span>
+        <span class="lang-en hidden">Visuals</span>
+      </a>
+      <span class="text-neutral-800">•</span>
+      <a href="#music" class="hover:text-white transition">
+        <span class="lang-de">Musik</span>
+        <span class="lang-en hidden">Music</span>
+      </a>
+      <span class="text-neutral-800">•</span>
+      <a href="#podcast" class="hover:text-white transition">Podcast</a>
+      <span class="text-neutral-800">•</span>
+      <a href="#journey" class="hover:text-white transition">
+        <span class="lang-de">Historie</span>
+        <span class="lang-en hidden">Journey</span>
+      </a>
+      <span class="text-neutral-800">•</span>
+      <a href="#fan-art" class="hover:text-white transition">Fan Art</a>
+      <span class="text-neutral-800">•</span>
+      <a href="#inner-circle" class="hover:text-white transition">Inner Circle</a>
+      <span class="text-neutral-800">•</span>
+      <a href="mailto:deine-email@beispiel.de" class="hover:text-white transition">
+        <span class="lang-de">Kontakt</span>
+        <span class="lang-en hidden">Contact</span>
+      </a>
+    </div>
 
-  <!-- Anker-Links Navigation -->
-  <div class="flex flex-wrap justify-center items-center gap-3 text-neutral-400 text-xs pt-2">
-    <a href="#visuals" class="hover:text-white transition">
-      <span class="lang-de">Visuals</span>
-      <span class="lang-en hidden">Visuals</span>
-    </a>
-    <span class="text-neutral-700">•</span>
-    <a href="#music" class="hover:text-white transition">
-      <span class="lang-de">Musik</span>
-      <span class="lang-en hidden">Music</span>
-    </a>
-    <span class="text-neutral-700">•</span>
-    <a href="#podcast" class="hover:text-white transition">
-      Podcast
-    </a>
-    <span class="text-neutral-700">•</span>
-    <a href="#journey" class="hover:text-white transition">
-      <span class="lang-de">Historie</span>
-      <span class="lang-en hidden">Journey</span>
-    </a>
-    <span class="text-neutral-700">•</span>
-    <a href="#fan-art" class="hover:text-white transition">
-      Fan Art
-    </a>
-    <span class="text-neutral-700">•</span>
-    <a href="#about" class="hover:text-white transition">
-      <span class="lang-de">Über Mich</span>
-      <span class="lang-en hidden">About</span>
-    </a>
-  </div>
-
-  <!-- Copyright -->
-  <div class="pt-6 border-t border-neutral-900/60 max-w-4xl mx-auto text-[11px] text-neutral-600">
-    <p>© 2026 Lil Dom. <span class="lang-de">Alle Rechte vorbehalten.</span><span class="lang-en hidden">All rights reserved.</span></p>
-  </div>
+    <!-- Copyright Zeile -->
+    <div class="pt-4 border-t border-neutral-900/60 max-w-4xl mx-auto text-[11px] text-neutral-600">
+      <p>© 2026 Lil Dom. <span class="lang-de">Alle Rechte vorbehalten.</span><span class="lang-en hidden">All rights reserved.</span></p>
+    </div>
 
   </footer>
 
