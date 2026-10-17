@@ -1,1 +1,205 @@
-hallo
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutz | Lil Dom</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Emo / Musician Schreibschrift -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+  <style>
+    .font-emo-script {
+      font-family: 'Herr Von Muellerhoff', 'Great Vibes', cursive;
+    }
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-100 font-sans antialiased selection:bg-neutral-800 selection:text-white min-h-screen flex flex-col justify-between">
+
+  <!-- Header / Navigation -->
+  <nav class="border-b border-neutral-900 py-6 px-6 sm:px-12 flex items-center justify-between">
+    <a href="index.html" class="text-2xl font-emo-script text-white hover:text-neutral-300 transition">
+      Lil Dom
+    </a>
+    
+    <div class="flex items-center space-x-4">
+      <a href="index.html" class="text-xs text-neutral-400 hover:text-white transition flex items-center gap-1">
+        ← <span class="lang-de">Zurück zur Hauptseite</span><span class="lang-en hidden">Back to Main Page</span>
+      </a>
+
+      <!-- Sprachumschalter -->
+      <div class="flex space-x-1 bg-black/50 backdrop-blur-md p-1 rounded-full border border-white/10">
+        <button id="btn-de" onclick="switchLang('de')" class="px-3 py-1 text-xs font-semibold rounded-full bg-white text-black transition">DE</button>
+        <button id="btn-en" onclick="switchLang('en')" class="px-3 py-1 text-xs font-semibold rounded-full bg-black/40 text-white transition">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto px-6 py-16 flex-1 space-y-10">
+    
+    <div>
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-2">
+        <span class="lang-de">Datenschutzerklärung</span>
+        <span class="lang-en hidden">Privacy Policy</span>
+      </h1>
+      <p class="text-xs font-mono text-neutral-500 uppercase tracking-widest">
+        <span class="lang-de">Informationen zur Datenverarbeitung nach DSGVO</span>
+        <span class="lang-en hidden">Data Processing Information according to GDPR</span>
+      </p>
+    </div>
+
+    <!-- 1. Verantwortlicher -->
+    <section class="p-6 sm:p-8 bg-neutral-900/40 border border-neutral-800/80 rounded-3xl space-y-4">
+      <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-400 border-b border-neutral-800 pb-2">
+        <span class="lang-de">1. Verantwortlicher für die Datenverarbeitung</span>
+        <span class="lang-en hidden">1. Controller / Responsible Party</span>
+      </h2>
+      <p class="text-xs sm:text-sm text-neutral-300 leading-relaxed font-light">
+        <span class="lang-de">Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</span>
+        <span class="lang-en hidden">The party responsible for data processing on this website under GDPR is:</span>
+      </p>
+      <div class="text-xs text-neutral-300 font-light space-y-1">
+        <p><strong>[Dein Bürgerlicher Name]</strong> (Lil Dom)</p>
+        <p>c/o [Firmenname / Betrieb / Studio]</p>
+        <p>[Musterstraße 123, 12345 Musterstadt]</p>
+        <p>E-Mail: <a href="mailto:deine-email@beispiel.de" class="text-white hover:underline">deine-email@beispiel.de</a></p>
+      </div>
+    </section>
+
+    <!-- 2. Hosting & Cloudflare -->
+    <section class="space-y-3 text-xs sm:text-sm text-neutral-400 font-light leading-relaxed">
+      <h2 class="text-sm sm:text-base font-semibold text-neutral-200">
+        <span class="lang-de">2. Webhosting über Cloudflare Pages</span>
+        <span class="lang-en hidden">2. Web Hosting via Cloudflare Pages</span>
+      </h2>
+      <p>
+        <span class="lang-de">
+          Diese Website wird über <strong>Cloudflare Pages</strong> (Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, USA) gehostet. Beim Aufruf unserer Website erfasst Cloudflare automatisch technische Server-Logfiles (z. B. IP-Adresse, Datum und Uhrzeit des Zugriffs, Browsertyp). Dies ist technisch erforderlich, um die Website sicher und stabil bereitzustellen (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO).
+        </span>
+        <span class="lang-en hidden">
+          This website is hosted via <strong>Cloudflare Pages</strong> (Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, USA). When accessing our website, Cloudflare automatically collects technical server log files (e.g. IP address, timestamp, browser type) necessary for website stability and security (Legal basis: Art. 6(1)(f) GDPR).
+        </span>
+      </p>
+    </section>
+
+    <!-- 3. Formspree / Inner Circle -->
+    <section class="space-y-3 text-xs sm:text-sm text-neutral-400 font-light leading-relaxed">
+      <h2 class="text-sm sm:text-base font-semibold text-neutral-200">
+        <span class="lang-de">3. Newsletter & Kontaktformulare (Formspree)</span>
+        <span class="lang-en hidden">3. Newsletter & Contact Forms (Formspree)</span>
+      </h2>
+      <p>
+        <span class="lang-de">
+          Wenn du dich für unseren <strong>Inner Circle</strong> eintragen oder uns eine Anfrage senden möchtest, verarbeiten wir deine E-Mail-Adresse und deine eingegebenen Daten über den Dienst <strong>Formspree</strong> (Formspree Inc., USA). Die Datenverarbeitung erfolgt auf Grundlage deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen (z. B. per E-Mail an uns).
+        </span>
+        <span class="lang-en hidden">
+          When signing up for our <strong>Inner Circle</strong> or sending inquiries, your email and inputs are processed via <strong>Formspree</strong> (Formspree Inc., USA). Data processing is based on your consent (Art. 6(1)(a) GDPR). You may revoke your consent at any time.
+        </span>
+      </p>
+    </section>
+
+    <!-- 4. Google Fonts & CDNs -->
+    <section class="space-y-3 text-xs sm:text-sm text-neutral-400 font-light leading-relaxed">
+      <h2 class="text-sm sm:text-base font-semibold text-neutral-200">
+        <span class="lang-de">4. Externe Schriften & Stylesheets (Google Fonts / Tailwind CDN)</span>
+        <span class="lang-en hidden">4. External Fonts & Stylesheets (Google Fonts / Tailwind CDN)</span>
+      </h2>
+      <p>
+        <span class="lang-de">
+          Diese Website nutzt zur einheitlichen Darstellung von Schriftarten und Layouts externe Dienste wie <strong>Google Fonts</strong> (Google Ireland Limited) und das <strong>Tailwind CSS CDN</strong>. Beim Laden der Seiten baut dein Browser eine Verbindung zu den Servern der Anbieter auf, wodurch diese Kenntnis von deiner IP-Adresse erlangen (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO für eine ansprechende Darstellung).
+        </span>
+        <span class="lang-en hidden">
+          This site uses <strong>Google Fonts</strong> (Google Ireland Limited) and <strong>Tailwind CSS CDN</strong> for consistent layout styling. Your browser connects to provider servers, making your IP address accessible to them (Legal basis: Art. 6(1)(f) GDPR).
+        </span>
+      </p>
+    </section>
+
+    <!-- 5. Social Media & Streaming Links -->
+    <section class="space-y-3 text-xs sm:text-sm text-neutral-400 font-light leading-relaxed">
+      <h2 class="text-sm sm:text-base font-semibold text-neutral-200">
+        <span class="lang-de">5. Links zu Social Media & Streaming-Plattformen</span>
+        <span class="lang-en hidden">5. Links to Social Media & Streaming Platforms</span>
+      </h2>
+      <p>
+        <span class="lang-de">
+          Auf unserer Website sind Links zu externen Plattformen wie <strong>Instagram, Spotify, Apple Music, YouTube</strong> und <strong>SoundCloud</strong> enthalten. Es handelt sich um reine Text-/Button-Verlinkungen (keine iFrames oder Social Plugins mit automatischer Nachverfolgung). Erst wenn du aktiv auf einen Link klickst, wirst du auf die jeweilige Plattform weitergeleitet.
+        </span>
+        <span class="lang-en hidden">
+          Our website includes direct hyperlinks to external platforms such as <strong>Instagram, Spotify, Apple Music, YouTube</strong>, and <strong>SoundCloud</strong>. These are plain links without automatic tracking. External platforms process your data only after you actively click on a link.
+        </span>
+      </p>
+    </section>
+
+    <!-- 6. Rechte der betroffenen Person -->
+    <section class="p-6 sm:p-8 bg-neutral-900/40 border border-neutral-800/80 rounded-3xl space-y-4">
+      <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-400 border-b border-neutral-800 pb-2">
+        <span class="lang-de">6. Deine Rechte (Betroffenenrechte)</span>
+        <span class="lang-en hidden">6. Your Rights under GDPR</span>
+      </h2>
+      <p class="text-xs sm:text-sm text-neutral-300 leading-relaxed font-light">
+        <span class="lang-de">Du hast nach der DSGVO jederzeit folgende Rechte bezüglich deiner personenbezogenen Daten:</span>
+        <span class="lang-en hidden">Under GDPR, you have the following rights regarding your personal data:</span>
+      </p>
+      <ul class="list-disc list-inside text-xs text-neutral-400 space-y-1.5 font-light">
+        <li><span class="lang-de">Recht auf Auskunft (Art. 15 DSGVO)</span><span class="lang-en hidden">Right to access (Art. 15 GDPR)</span></li>
+        <li><span class="lang-de">Recht auf Berichtigung (Art. 16 DSGVO)</span><span class="lang-en hidden">Right to rectification (Art. 16 GDPR)</span></li>
+        <li><span class="lang-de">Recht auf Löschung (Art. 17 DSGVO)</span><span class="lang-en hidden">Right to erasure / "right to be forgotten" (Art. 17 GDPR)</span></li>
+        <li><span class="lang-de">Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</span><span class="lang-en hidden">Right to restriction of processing (Art. 18 GDPR)</span></li>
+        <li><span class="lang-de">Recht auf Widerruf erteilter Einwilligungen (Art. 7 Abs. 3 DSGVO)</span><span class="lang-en hidden">Right to withdraw consent (Art. 7(3) GDPR)</span></li>
+        <li><span class="lang-de">Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde (Art. 77 DSGVO)</span><span class="lang-en hidden">Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)</span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-neutral-900 py-8 text-center text-xs text-neutral-600">
+    <div class="space-x-4 mb-2">
+      <a href="index.html" class="hover:text-neutral-400 transition">Home</a>
+      <span>|</span>
+      <a href="impressum.html" class="hover:text-neutral-400 transition">
+        <span class="lang-de">Impressum</span>
+        <span class="lang-en hidden">Legal Notice</span>
+      </a>
+    </div>
+    <p>© 2026 Lil Dom. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript Logik für Sprachen -->
+  <script>
+    function switchLang(lang) {
+      const btnDe = document.getElementById('btn-de');
+      const btnEn = document.getElementById('btn-en');
+      const deElements = document.querySelectorAll('.lang-de');
+      const enElements = document.querySelectorAll('.lang-en');
+
+      if (lang === 'en') {
+        deElements.forEach(el => el.classList.add('hidden'));
+        enElements.forEach(el => el.classList.remove('hidden'));
+        
+        btnDe.classList.remove('bg-white', 'text-black');
+        btnDe.classList.add('bg-black/40', 'text-white');
+        
+        btnEn.classList.add('bg-white', 'text-black');
+        btnEn.classList.remove('bg-black/40', 'text-white');
+      } else {
+        enElements.forEach(el => el.classList.add('hidden'));
+        deElements.forEach(el => el.classList.remove('hidden'));
+        
+        btnEn.classList.remove('bg-white', 'text-black');
+        btnEn.classList.add('bg-black/40', 'text-white');
+        
+        btnDe.classList.add('bg-white', 'text-black');
+        btnDe.classList.remove('bg-black/40', 'text-white');
+      }
+    }
+  </script>
+
+</body>
+</html>
