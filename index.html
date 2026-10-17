@@ -49,6 +49,7 @@
       <div class="flex flex-wrap justify-center gap-2.5 px-4">
         <a href="https://instagram.com" target="_blank" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full backdrop-blur-md transition">Instagram</a>
         <a href="https://spotify.com" target="_blank" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full transition">Spotify</a>
+        <a href="#podcast" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full backdrop-blur-md transition">Podcast</a>
         <a href="#inner-circle" class="px-5 py-2.5 bg-black/40 hover:bg-black/70 border border-white/20 text-white text-sm font-medium rounded-full backdrop-blur-md transition">Inner Circle</a>
         <a href="mailto:deine-email@beispiel.de" class="px-5 py-2.5 bg-white text-black hover:bg-neutral-200 text-sm font-semibold rounded-full transition">
           <span class="lang-de">Kontakt</span>
@@ -235,6 +236,60 @@
       </div>
     </section>
 
+
+    <!-- ================================================================= -->
+    <!-- PODCAST SECTION                                                   -->
+    <!-- ================================================================= -->
+    <section id="podcast">
+      <div class="flex items-center justify-between mb-6 border-b border-neutral-900 pb-3">
+        <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500">
+          <span class="lang-de">Podcast</span>
+          <span class="lang-en hidden">Podcast</span>
+        </h2>
+        <span class="text-xs text-neutral-500 font-mono">Lil Dom & Co-Host</span>
+      </div>
+
+      <div class="p-6 sm:p-8 bg-neutral-900/40 border border-neutral-800/80 rounded-3xl flex flex-col sm:flex-row items-center gap-6 relative overflow-hidden">
+        <!-- Subtiler Hintergrund-Glow -->
+        <div class="absolute -bottom-10 -left-10 w-36 h-36 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
+
+        <!-- Podcast Cover / Artwork -->
+        <div class="shrink-0 w-28 h-28 sm:w-36 sm:h-36 bg-neutral-800 rounded-2xl border border-neutral-700/60 overflow-hidden flex items-center justify-center text-4xl shadow-xl">
+          🎙️
+          <!-- Sobald du dein Cover-Bild hast, ersetze das Icon durch:
+               <img src="podcast-cover.jpg" alt="Podcast Cover" class="w-full h-full object-cover"> 
+          -->
+        </div>
+
+        <!-- Podcast Details & Links -->
+        <div class="flex-1 text-center sm:text-left space-y-3 z-10">
+          <div>
+            <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-500">Weekly Talk / Show</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mt-0.5">Podcast Name</h3>
+          </div>
+
+          <p class="text-xs sm:text-sm text-neutral-400 font-light leading-relaxed">
+            <span class="lang-de">Gespräche über Musik, Lifestyle, Mindset, Stories & Ausblicke – gehostet von Lil Dom und Kollege.</span>
+            <span class="lang-en hidden">Discussions on music, lifestyle, mindsets & stories hosted by Lil Dom and co-host.</span>
+          </p>
+
+          <!-- Streaming Buttons -->
+          <div class="flex flex-wrap justify-center sm:justify-start gap-2 pt-2">
+            <a href="https://open.spotify.com" target="_blank" class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-xs font-medium rounded-xl transition text-neutral-200 flex items-center gap-1.5">
+              🟢 Spotify
+            </a>
+            <a href="https://podcasts.apple.com" target="_blank" class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-xs font-medium rounded-xl transition text-neutral-200 flex items-center gap-1.5">
+              🍎 Apple Podcasts
+            </a>
+            <a href="https://youtube.com" target="_blank" class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-xs font-medium rounded-xl transition text-neutral-200 flex items-center gap-1.5">
+              ▶️ YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
     <!-- Fan Art / Community Section -->
     <section id="fan-art">
       <div class="flex items-center justify-between mb-6 border-b border-neutral-900 pb-3">
@@ -329,50 +384,61 @@
   <!-- ================================================================= -->
   <footer class="border-t border-neutral-900 py-12 text-center text-xs text-neutral-500 space-y-6">
     
-    <!-- 1. Header Buttons Replika im Footer -->
-    <div class="flex flex-wrap justify-center items-center gap-3 px-4 max-w-2xl mx-auto">
-      <a href="https://instagram.com" target="_blank" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
-        Instagram
-      </a>
-      <a href="https://spotify.com" target="_blank" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
-        Spotify
-      </a>
-      <a href="#inner-circle" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
-        Inner Circle
-      </a>
-      <a href="mailto:deine-email@beispiel.de" class="px-5 py-2.5 bg-white text-black hover:bg-neutral-200 font-semibold rounded-full transition">
-        <span class="lang-de">Kontakt</span>
-        <span class="lang-en hidden">Contact</span>
-      </a>
-    </div>
+<!-- Header-Buttons Replika -->
+  <div class="flex flex-wrap justify-center items-center gap-3 px-4 max-w-2xl mx-auto">
+    <a href="https://instagram.com" target="_blank" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
+      Instagram
+    </a>
+    <a href="https://spotify.com" target="_blank" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
+      Spotify
+    </a>
+    <a href="#podcast" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
+      Podcast
+    </a>
+    <a href="#inner-circle" class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium rounded-full transition">
+      Inner Circle
+    </a>
+    <a href="mailto:deine-email@beispiel.de" class="px-5 py-2.5 bg-white text-black hover:bg-neutral-200 font-semibold rounded-full transition">
+      <span class="lang-de">Kontakt</span>
+      <span class="lang-en hidden">Contact</span>
+    </a>
+  </div>
 
-    <!-- 2. Direkte Anker-Links zu den Abschnitten -->
-    <div class="flex flex-wrap justify-center items-center gap-3 text-neutral-400 text-xs pt-2">
-      <a href="#visuals" class="hover:text-white transition">
-        <span class="lang-de">Visuals</span>
-        <span class="lang-en hidden">Visuals</span>
-      </a>
-      <span class="text-neutral-700">•</span>
-      <a href="#music" class="hover:text-white transition">
-        <span class="lang-de">Musik</span>
-        <span class="lang-en hidden">Music</span>
-      </a>
-      <span class="text-neutral-700">•</span>
-      <a href="#journey" class="hover:text-white transition">
-        <span class="lang-de">Historie</span>
-        <span class="lang-en hidden">Journey</span>
-      </a>
-      <span class="text-neutral-700">•</span>
-      <a href="#about" class="hover:text-white transition">
-        <span class="lang-de">Über Mich</span>
-        <span class="lang-en hidden">About</span>
-      </a>
-    </div>
+  <!-- Anker-Links Navigation -->
+  <div class="flex flex-wrap justify-center items-center gap-3 text-neutral-400 text-xs pt-2">
+    <a href="#visuals" class="hover:text-white transition">
+      <span class="lang-de">Visuals</span>
+      <span class="lang-en hidden">Visuals</span>
+    </a>
+    <span class="text-neutral-700">•</span>
+    <a href="#music" class="hover:text-white transition">
+      <span class="lang-de">Musik</span>
+      <span class="lang-en hidden">Music</span>
+    </a>
+    <span class="text-neutral-700">•</span>
+    <a href="#podcast" class="hover:text-white transition">
+      Podcast
+    </a>
+    <span class="text-neutral-700">•</span>
+    <a href="#journey" class="hover:text-white transition">
+      <span class="lang-de">Historie</span>
+      <span class="lang-en hidden">Journey</span>
+    </a>
+    <span class="text-neutral-700">•</span>
+    <a href="#fan-art" class="hover:text-white transition">
+      Fan Art
+    </a>
+    <span class="text-neutral-700">•</span>
+    <a href="#about" class="hover:text-white transition">
+      <span class="lang-de">Über Mich</span>
+      <span class="lang-en hidden">About</span>
+    </a>
+  </div>
 
-    <!-- 3. Copyright Zeile -->
-    <div class="pt-6 border-t border-neutral-900/60 max-w-4xl mx-auto text-[11px] text-neutral-600">
-      <p>© 2026 Lil Dom. <span class="lang-de">Alle Rechte vorbehalten.</span><span class="lang-en hidden">All rights reserved.</span></p>
-    </div>
+  <!-- Copyright -->
+  <div class="pt-6 border-t border-neutral-900/60 max-w-4xl mx-auto text-[11px] text-neutral-600">
+    <p>© 2026 Lil Dom. <span class="lang-de">Alle Rechte vorbehalten.</span><span class="lang-en hidden">All rights reserved.</span></p>
+  </div>
 
   </footer>
 
