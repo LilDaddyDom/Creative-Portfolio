@@ -81,21 +81,22 @@
   <!-- Main Content -->
   <main id="content" class="max-w-4xl mx-auto px-6 space-y-16 pt-16 pb-24">
     
-    <!-- Visuals & Gallery Section -->
-    <section id="visuals" class="space-y-6">
+    <!-- Visuals / Galerie (Schneller Einstieg) -->
+    <section id="visuals" class="space-y-4">
       
       <!-- Section Header -->
       <div class="flex items-center justify-between border-b border-neutral-900 pb-3">
         <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500">
-          <span class="lang-de">Visuals & Galerie</span>
-          <span class="lang-en hidden">Visuals & Gallery</span>
+          <span class="lang-de">Visuals</span>
+          <span class="lang-en hidden">Visuals</span>
         </h2>
-        <a href="https://www.youtube.com/@Lil-Dom" target="_blank" rel="noopener noreferrer" class="text-xs text-neutral-400 hover:text-white transition">
-          YouTube ↗
-        </a>
+        <span class="text-xs font-mono text-neutral-500 uppercase tracking-wider">
+          <span class="lang-de">Galerie</span>
+          <span class="lang-en hidden">Gallery</span>
+        </span>
       </div>
 
-      <!-- 1. Die 3 Image Slots (Bilder-Galerie zuerst) -->
+      <!-- 3 Image Slots -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
         
         <!-- Slot 1 -->
@@ -122,32 +123,6 @@
           </div>
         </div>
 
-      </div>
-
-      <!-- 2. Highlight darunter: Official Music Video -->
-      <div class="bg-neutral-900/40 border border-neutral-800/80 rounded-3xl p-4 sm:p-5 space-y-3 shadow-2xl">
-        <div class="relative aspect-video w-full rounded-2xl overflow-hidden border border-neutral-800/80 bg-black shadow-inner">
-          <iframe 
-            class="w-full h-full border-0"
-            src="https://www.youtube-nocookie.com/embed/t04cmlPpdOk" 
-            title="Lil Dom - For U by U (Official Video)"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen
-            loading="lazy">
-          </iframe>
-        </div>
-
-        <div class="flex items-center justify-between pt-1">
-          <div>
-            <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-neutral-100 text-black border border-white">
-              Official Video
-            </span>
-            <h3 class="text-sm sm:text-base font-bold text-white inline-block ml-2">For U by U</h3>
-          </div>
-          <a href="https://www.youtube.com/watch?v=t04cmlPpdOk" target="_blank" rel="noopener noreferrer" class="text-xs text-neutral-400 hover:text-white transition">
-            YouTube ↗
-          </a>
-        </div>
       </div>
 
     </section>
@@ -602,6 +577,62 @@
         </div>
 
       </div>
+    </section>
+
+
+  <!-- Video Proof / Portfolio Highlight (Direkt nach Services) -->
+    <section id="featured-video" class="space-y-4">
+      
+      <!-- Section Header -->
+      <div class="flex items-center justify-between border-b border-neutral-900 pb-3">
+        <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500">
+          <span class="lang-de">Creative Direction in Action</span>
+          <span class="lang-en hidden">Creative Direction in Action</span>
+        </h2>
+        <span class="text-xs font-mono text-neutral-500 uppercase tracking-wider">
+          <span class="lang-de">Official Video</span>
+          <span class="lang-en hidden">Official Video</span>
+        </span>
+      </div>
+
+      <!-- Video Player Card -->
+      <div class="bg-neutral-900/40 border border-neutral-800/80 rounded-3xl p-4 sm:p-5 space-y-3 shadow-2xl">
+        
+        <!-- Responsive Video Container (16:9) -->
+        <div class="relative aspect-video w-full rounded-2xl overflow-hidden border border-neutral-800/80 bg-black shadow-inner">
+          <iframe 
+            class="w-full h-full border-0"
+            src="https://www.youtube-nocookie.com/embed/t04cmlPpdOk" 
+            title="Lil Dom - For U by U (Official Video)"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- Info & Call to Action -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-white text-black">
+                Featured Work
+              </span>
+              <span class="text-xs text-neutral-400 font-mono">Lil Dom</span>
+            </div>
+            <h3 class="text-base font-bold text-white">For U by U (Official Video)</h3>
+            <p class="text-xs text-neutral-400 font-light mt-0.5">
+              <span class="lang-de">Ein Beispiel für das Zusammenspiel aus Sound, Visuals und Creative Direction.</span>
+              <span class="lang-en hidden">A showcase of combining sound, visuals, and creative direction.</span>
+            </p>
+          </div>
+
+          <a href="https://www.youtube.com/watch?v=t04cmlPpdOk" target="_blank" rel="noopener noreferrer" class="self-start sm:self-auto px-4 py-2 bg-neutral-950 hover:bg-neutral-800 border border-neutral-800 text-neutral-300 hover:text-white text-xs font-semibold rounded-xl transition flex items-center gap-2 shrink-0">
+            <span>Auf YouTube ansehen ↗</span>
+          </a>
+        </div>
+
+      </div>
+
     </section>
 
   </main>
