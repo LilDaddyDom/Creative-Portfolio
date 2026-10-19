@@ -372,7 +372,7 @@
       </div>
     </section>
 
-    <!-- Journey / Vision Section (Design-Twist: Left-Accent Lines & Subtle Gradients) -->
+   <!-- Journey / Vision Section (Left-to-Right Progression & Custom Grey Shades) -->
     <section id="journey" class="space-y-6">
       
       <!-- Section Header -->
@@ -390,54 +390,43 @@
         </p>
       </div>
 
-      <!-- Asymmetrisches Grid mit Left-Accent Line Twist -->
+      <!-- Asymmetrisches Grid (Links: Vergangenheit / Rechts: Present Focus) -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
 
-        <!-- ORIGIN FEATURE (Links - 7 Spalten): Phase 01 mit Akzent-Linie links -->
-        <div class="lg:col-span-7 bg-gradient-to-br from-neutral-900/80 via-neutral-900/40 to-neutral-950/60 border-l-2 border-l-white/80 border-t border-r border-b border-neutral-800/60 rounded-3xl p-5 sm:p-6 flex flex-col justify-between group hover:border-l-white transition duration-300 shadow-2xl">
-          <div>
-            <!-- Header Badge mit Live-Dot -->
-            <div class="flex items-center justify-between text-xs text-neutral-500 font-mono mb-4">
-              <div class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
-                <span class="text-[10px] font-mono uppercase tracking-wider text-neutral-300">Phase 01 • Origin</span>
-              </div>
-              <span class="text-neutral-500">2023</span>
-            </div>
-
-            <!-- Content Flex Layout (Bild links, Text rechts) -->
-            <div class="flex flex-col sm:flex-row gap-4 sm:gap-5 items-start sm:items-center">
-              <!-- Cover Image -->
-              <div class="relative w-28 h-28 sm:w-36 sm:h-36 shrink-0 bg-neutral-950 rounded-2xl overflow-hidden border border-neutral-800/80 shadow-2xl group-hover:scale-[1.02] transition duration-500">
-                <img src="first_release_lil_rockstar.png" alt="Lil Rockstar First Release Cover" class="w-full h-full object-cover">
-                <div class="absolute top-2 left-2 bg-black/80 text-neutral-300 border border-neutral-700/60 text-[9px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-full backdrop-blur-md">
-                  First Release
-                </div>
-              </div>
-
-              <!-- Text Details -->
-              <div class="space-y-2">
-                <h3 class="text-lg font-bold text-white tracking-tight">Lil Rockstar</h3>
-                <p class="text-xs text-neutral-400 font-light leading-relaxed">
-                  <span class="lang-de">Der allererste Release legte das Fundament. Hier wurden die ersten musikalischen Akzente gesetzt und der Grundstein für Ästhetik und Vision gelegt.</span>
-                  <span class="lang-en hidden">The initial release laid the foundation. Here the sonic base was set, defining early aesthetics and vision.</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bottom Footer -->
-          <div class="pt-4 mt-5 border-t border-neutral-800/60 flex justify-between items-center text-[11px] font-mono text-neutral-500">
-            <span>Foundations & Original Vibe</span>
-            <span class="text-neutral-400">01 / 03</span>
-          </div>
-        </div>
-
-        <!-- STACKED CARDS (Rechts - 5 Spalten): Phase 02 & 03 gestapelt -->
+        <!-- LINKS (5 Spalten): Phase 01 & Phase 02 gestapelt (Vergangenheit) -->
         <div class="lg:col-span-5 flex flex-col gap-4">
 
-          <!-- Phase 02 -->
-          <div class="flex-1 bg-gradient-to-br from-neutral-900/50 to-neutral-950/30 border-l-2 border-l-neutral-600 border-t border-r border-b border-neutral-800/60 rounded-3xl p-5 flex flex-col justify-between group hover:border-l-neutral-300 transition duration-300">
+          <!-- KACHEL 1: Phase 01 (Deepest Grey / Origin) -->
+          <div class="flex-1 bg-neutral-950/80 border border-neutral-800/60 border-l-2 border-l-neutral-700 rounded-3xl p-5 flex flex-col justify-between group hover:border-neutral-700 transition duration-300 shadow-lg">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono mb-3">
+                <span class="text-[10px] uppercase tracking-widest text-neutral-500">Phase 01 • Origin</span>
+                <span class="text-neutral-500">2023</span>
+              </div>
+
+              <!-- Compact Content with First Release Cover -->
+              <div class="flex items-center gap-3">
+                <div class="relative w-16 h-16 shrink-0 bg-neutral-900 rounded-xl overflow-hidden border border-neutral-800 shadow-md">
+                  <img src="first_release_lil_rockstar.png" alt="Lil Rockstar Cover" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="space-y-1">
+                  <h3 class="text-sm font-bold text-white tracking-tight">Lil Rockstar</h3>
+                  <p class="text-[11px] text-neutral-400 font-light leading-snug">
+                    <span class="lang-de">Der allererste Release legte das musikalische & visuelle Fundament.</span>
+                    <span class="lang-en hidden">The initial release laid the sonic and visual foundation.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-3 mt-3 border-t border-neutral-800/50 flex justify-between text-[10px] font-mono text-neutral-500">
+              <span>Foundations</span>
+              <span>01 / 03</span>
+            </div>
+          </div>
+
+          <!-- KACHEL 2: Phase 02 (Medium Grey / Evolution) -->
+          <div class="flex-1 bg-neutral-900/40 border border-neutral-800/80 border-l-2 border-l-neutral-500 rounded-3xl p-5 flex flex-col justify-between group hover:border-neutral-700 transition duration-300 shadow-xl">
             <div class="space-y-2">
               <div class="flex items-center justify-between text-xs font-mono">
                 <span class="text-[10px] uppercase tracking-widest text-neutral-400">Phase 02</span>
@@ -449,31 +438,57 @@
                 <span class="lang-en hidden">Precision sound design, emotional resonance, and refining the signature style.</span>
               </p>
             </div>
-            <div class="pt-3 mt-3 border-t border-neutral-800/60 flex justify-between text-[11px] font-mono text-neutral-500">
+
+            <div class="pt-3 mt-3 border-t border-neutral-800/60 flex justify-between text-[10px] font-mono text-neutral-500">
               <span>Production & Atmosphere</span>
               <span>02 / 03</span>
             </div>
           </div>
 
-          <!-- Phase 03 -->
-          <div class="flex-1 bg-gradient-to-br from-neutral-900/50 to-neutral-950/30 border-l-2 border-l-neutral-400 border-t border-r border-b border-neutral-800/60 rounded-3xl p-5 flex flex-col justify-between group hover:border-l-white transition duration-300">
-            <div class="space-y-2">
-              <div class="flex items-center justify-between text-xs font-mono">
-                <span class="text-[10px] uppercase tracking-widest text-neutral-300">Phase 03</span>
-                <span class="text-neutral-400">Current Era</span>
+        </div>
+
+        <!-- RECHTS (7 Spalten): Phase 03 - DER RAMPENLICHT-FOKUS (Elevated Grey & Gradient) -->
+        <div class="lg:col-span-7 bg-gradient-to-br from-neutral-900/90 via-neutral-900/60 to-neutral-950/80 border border-neutral-700/80 border-l-2 border-l-white rounded-3xl p-6 sm:p-7 flex flex-col justify-between group hover:border-neutral-500 transition duration-300 shadow-2xl relative overflow-hidden">
+          
+          <!-- Subtle Glow Effect in the background -->
+          <div class="absolute -top-24 -right-24 w-48 h-48 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div>
+            <!-- Header Badge mit Pulsing Dot -->
+            <div class="flex items-center justify-between text-xs text-neutral-400 font-mono mb-5">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-white">Phase 03 • Current Era</span>
               </div>
-              <h3 class="text-base font-bold text-white tracking-tight">360° Creative Direction</h3>
-              <p class="text-xs text-neutral-400 font-light leading-relaxed">
-                <span class="lang-de">Verschmelzung von Alben, Podcasts, Modestil und Kollaborationen zu einer zusammenhängenden Brand.</span>
-                <span class="lang-en hidden">Fusing albums, podcasts, style, and collaborations into a cohesive brand universe.</span>
-              </p>
+              <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-neutral-300 text-[10px] border border-white/20">Jetzt</span>
             </div>
-            <div class="pt-3 mt-3 border-t border-neutral-800/60 flex justify-between text-[11px] font-mono text-neutral-300">
-              <span>Music, Media & Direction</span>
-              <span>03 / 03</span>
+
+            <!-- Focus Content -->
+            <div class="space-y-4">
+              <div>
+                <span class="text-xs font-mono text-neutral-400 uppercase tracking-widest">Main Highlight</span>
+                <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight mt-1">360° Creative Direction</h3>
+              </div>
+
+              <p class="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed max-w-xl">
+                <span class="lang-de">Das Gesamtbild: Verschmelzung von Alben, Podcasts, Modestil und eigenen Kollaborationen zu einer zusammenhängenden, unverwechselbaren Kunstfigur & Brand.</span>
+                <span class="lang-en hidden">The full picture: Fusing albums, podcasts, personal style, and collaborations into a cohesive, unmistakable brand universe.</span>
+              </p>
+
+              <!-- Sub-Tags for Phase 03 -->
+              <div class="pt-2 flex flex-wrap gap-2 text-[11px] font-mono">
+                <span class="px-2.5 py-1 bg-neutral-950/80 border border-neutral-800 text-neutral-300 rounded-lg">Full Album Era</span>
+                <span class="px-2.5 py-1 bg-neutral-950/80 border border-neutral-800 text-neutral-300 rounded-lg">Visual Universe</span>
+                <span class="px-2.5 py-1 bg-neutral-950/80 border border-neutral-800 text-neutral-300 rounded-lg">Brand Collabs</span>
+              </div>
             </div>
           </div>
 
+          <!-- Bottom Footer -->
+          <div class="pt-5 mt-6 border-t border-neutral-800/80 flex justify-between items-center text-[11px] font-mono text-neutral-400">
+            <span>Music, Media & Direction</span>
+            <span class="text-white font-bold">03 / 03</span>
+          </div>
         </div>
 
       </div>
