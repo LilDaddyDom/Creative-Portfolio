@@ -372,7 +372,7 @@
       </div>
     </section>
 
-    <!-- Journey / Vision Section (Asymmetrisches Editorial Layout) -->
+    <!-- Journey / Vision Section (Design-Twist: Left-Accent Lines & Subtle Gradients) -->
     <section id="journey" class="space-y-6">
       
       <!-- Section Header -->
@@ -390,24 +390,27 @@
         </p>
       </div>
 
-      <!-- Asymmetrisches Grid (Brecht die 3-Boxen-Wiederholung) -->
+      <!-- Asymmetrisches Grid mit Left-Accent Line Twist -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
 
-        <!-- ORIGIN FEATURE (Links - 7 Spalten): Phase 01 mit Cover -->
-        <div class="lg:col-span-7 bg-neutral-900/40 border border-neutral-800/80 rounded-3xl p-5 sm:p-6 flex flex-col justify-between group hover:border-neutral-700 transition duration-300">
+        <!-- ORIGIN FEATURE (Links - 7 Spalten): Phase 01 mit Akzent-Linie links -->
+        <div class="lg:col-span-7 bg-gradient-to-br from-neutral-900/80 via-neutral-900/40 to-neutral-950/60 border-l-2 border-l-white/80 border-t border-r border-b border-neutral-800/60 rounded-3xl p-5 sm:p-6 flex flex-col justify-between group hover:border-l-white transition duration-300 shadow-2xl">
           <div>
-            <!-- Header Badge -->
+            <!-- Header Badge mit Live-Dot -->
             <div class="flex items-center justify-between text-xs text-neutral-500 font-mono mb-4">
-              <span class="px-2.5 py-0.5 rounded-full bg-neutral-800 text-neutral-300 text-[10px] font-mono uppercase tracking-wider">Phase 01 • Origin</span>
-              <span>2023</span>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                <span class="text-[10px] font-mono uppercase tracking-wider text-neutral-300">Phase 01 • Origin</span>
+              </div>
+              <span class="text-neutral-500">2023</span>
             </div>
 
             <!-- Content Flex Layout (Bild links, Text rechts) -->
             <div class="flex flex-col sm:flex-row gap-4 sm:gap-5 items-start sm:items-center">
               <!-- Cover Image -->
-              <div class="relative w-28 h-28 sm:w-36 sm:h-36 shrink-0 bg-neutral-950 rounded-2xl overflow-hidden border border-neutral-800/80 shadow-2xl">
-                <img src="first_release_lil_rockstar.png" alt="Lil Rockstar First Release Cover" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute top-2 left-2 bg-neutral-950/80 text-neutral-300 border border-neutral-700/60 text-[9px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-full backdrop-blur-md">
+              <div class="relative w-28 h-28 sm:w-36 sm:h-36 shrink-0 bg-neutral-950 rounded-2xl overflow-hidden border border-neutral-800/80 shadow-2xl group-hover:scale-[1.02] transition duration-500">
+                <img src="first_release_lil_rockstar.png" alt="Lil Rockstar First Release Cover" class="w-full h-full object-cover">
+                <div class="absolute top-2 left-2 bg-black/80 text-neutral-300 border border-neutral-700/60 text-[9px] font-mono uppercase tracking-wider px-2 py-0.5 rounded-full backdrop-blur-md">
                   First Release
                 </div>
               </div>
@@ -430,14 +433,14 @@
           </div>
         </div>
 
-        <!-- STACKED CARDS (Rechts - 5 Spalten): Phase 02 & Phase 03 gestapelt -->
+        <!-- STACKED CARDS (Rechts - 5 Spalten): Phase 02 & 03 gestapelt -->
         <div class="lg:col-span-5 flex flex-col gap-4">
 
           <!-- Phase 02 -->
-          <div class="flex-1 bg-neutral-900/40 border border-neutral-800/80 rounded-3xl p-5 flex flex-col justify-between group hover:border-neutral-700 transition duration-300">
+          <div class="flex-1 bg-gradient-to-br from-neutral-900/50 to-neutral-950/30 border-l-2 border-l-neutral-600 border-t border-r border-b border-neutral-800/60 rounded-3xl p-5 flex flex-col justify-between group hover:border-l-neutral-300 transition duration-300">
             <div class="space-y-2">
               <div class="flex items-center justify-between text-xs font-mono">
-                <span class="text-[10px] uppercase tracking-widest text-neutral-500">Phase 02</span>
+                <span class="text-[10px] uppercase tracking-widest text-neutral-400">Phase 02</span>
                 <span class="text-neutral-500">Evolution</span>
               </div>
               <h3 class="text-base font-bold text-white tracking-tight">Sound-Design & Schärfung</h3>
@@ -453,10 +456,10 @@
           </div>
 
           <!-- Phase 03 -->
-          <div class="flex-1 bg-neutral-900/40 border border-neutral-800/80 rounded-3xl p-5 flex flex-col justify-between group hover:border-neutral-700 transition duration-300">
+          <div class="flex-1 bg-gradient-to-br from-neutral-900/50 to-neutral-950/30 border-l-2 border-l-neutral-400 border-t border-r border-b border-neutral-800/60 rounded-3xl p-5 flex flex-col justify-between group hover:border-l-white transition duration-300">
             <div class="space-y-2">
               <div class="flex items-center justify-between text-xs font-mono">
-                <span class="text-[10px] uppercase tracking-widest text-neutral-400">Phase 03</span>
+                <span class="text-[10px] uppercase tracking-widest text-neutral-300">Phase 03</span>
                 <span class="text-neutral-400">Current Era</span>
               </div>
               <h3 class="text-base font-bold text-white tracking-tight">360° Creative Direction</h3>
