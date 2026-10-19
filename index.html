@@ -632,11 +632,11 @@
     </section>
 
 
-  <!-- Inner Circle & Contact Section (Circle Design ganz unten) -->
-    <section id="inner-circle" class="space-y-12 py-12 flex flex-col items-center justify-center">
+  <!-- Inner Circle & Contact Section (Split: Circle Left, Context Right) -->
+    <section id="inner-circle" class="space-y-6 pt-6">
       
       <!-- Section Header -->
-      <div class="border-b border-neutral-900 pb-3 space-y-1 w-full">
+      <div class="border-b border-neutral-900 pb-3 space-y-1">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
           <h2 class="text-xs font-bold tracking-widest uppercase text-neutral-500">
             <span class="lang-de">Inner Circle & Direct Contact</span>
@@ -644,43 +644,70 @@
           </h2>
           <span class="text-xs font-mono text-neutral-500 uppercase">Join The Movement</span>
         </div>
-        <p class="text-xs text-neutral-400 font-light">
-          <span class="lang-de">Exklusiver Access zu Unreleased Snippets, Presales & allen offiziellen Anfragen.</span>
-          <span class="lang-en hidden">Exclusive access to unreleased snippets, presales & official business inquiries.</span>
-        </p>
       </div>
 
-      <!-- The Inner Circle: Kreisförmiges CTA-Element -->
-      <div class="relative w-full max-w-lg sm:max-w-xl md:max-w-2xl aspect-square rounded-full bg-gradient-to-br from-neutral-900 via-neutral-950 to-neutral-950 border border-neutral-800 flex flex-col items-center justify-center p-8 sm:p-14 md:p-16 text-center shadow-[0_0_50px_rgba(255,255,255,0.03)] hover:shadow-[0_0_60px_rgba(255,255,255,0.06)] hover:border-neutral-700/60 transition duration-500 overflow-hidden group">
+      <!-- Split Layout Box -->
+      <div class="bg-neutral-900/40 border border-neutral-800/80 rounded-3xl p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center shadow-2xl">
         
-        <!-- Kreisförmige Hintergrund-Akzente (Radar/Glow) -->
-        <div class="absolute inset-0 rounded-full border border-white/[0.02] scale-95 pointer-events-none"></div>
-        <div class="absolute inset-0 rounded-full border border-white/[0.01] scale-[0.85] pointer-events-none"></div>
-        <div class="absolute -bottom-32 -right-32 w-64 h-64 bg-white/5 rounded-full blur-3xl pointer-events-none group-hover:bg-white/8 transition duration-500"></div>
+        <!-- LINKS: Kompakter Kreis mit Titel & Buttons (5 Spalten) -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-[280px] sm:max-w-[320px] aspect-square rounded-full bg-gradient-to-br from-neutral-900 via-neutral-950 to-neutral-950 border border-neutral-700/80 flex flex-col items-center justify-center p-6 text-center shadow-[0_0_40px_rgba(255,255,255,0.03)] group hover:border-neutral-500 transition duration-500 overflow-hidden shrink-0">
+            
+            <!-- Subtle Glow -->
+            <div class="absolute inset-0 rounded-full border border-white/[0.02] scale-90 pointer-events-none"></div>
 
-        <!-- Inhalts-Container (Zentriert) -->
-        <div class="max-w-md md:max-w-lg space-y-5 sm:space-y-6 relative z-10 flex flex-col items-center justify-center">
-          
-          <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight">
-            Werde Teil des<br>
-            <span class="bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">Inner Circles.</span>
-          </h3>
-          
-          <p class="text-xs sm:text-sm text-neutral-400 font-light leading-relaxed px-4">
-            <span class="lang-de">Kein Spam. Nur echte Updates, exklusive Einblicke vor allen anderen und die direkte Line für Kollaborationen oder Anfragen.</span>
-            <span class="lang-en hidden">No spam. Only real updates, early insights before anyone else, and direct contact for collaborations.</span>
-          </p>
+            <div class="space-y-4 relative z-10 w-full px-2">
+              <h3 class="text-base sm:text-lg font-bold text-white tracking-tight leading-tight">
+                Werde Teil des<br>
+                <span class="text-neutral-400">Inner Circles.</span>
+              </h3>
 
-          <!-- Buttons Row (Zentriert) -->
-          <div class="flex flex-col sm:flex-row items-center gap-3 pt-4 w-full justify-center">
-            <a href="mailto:deine-email@beispiel.de" class="w-full sm:w-auto px-6 py-3 bg-white hover:bg-neutral-200 text-black text-xs font-bold rounded-full transition duration-300 text-center flex items-center justify-center gap-2 shadow-lg shrink-0">
-              <span>Direct Inquiry / Mail ↗</span>
-            </a>
-            <a href="https://www.instagram.com/lildom.cupgod" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3 bg-neutral-950 hover:bg-neutral-900 border border-neutral-800/80 text-neutral-300 hover:text-white text-xs font-semibold rounded-full transition duration-300 text-center flex items-center justify-center gap-2 shrink-0">
-              <span>Instagram DM ↗</span>
-            </a>
+              <!-- Stacked Compact Buttons -->
+              <div class="flex flex-col gap-2 w-full pt-1">
+                <a href="mailto:deine-email@beispiel.de" class="w-full py-2.5 px-3 bg-white hover:bg-neutral-200 text-black text-[11px] font-bold rounded-full transition duration-300 text-center flex items-center justify-center gap-1.5 shadow-md">
+                  <span>Direct Mail ↗</span>
+                </a>
+                <a href="https://www.instagram.com/lildom.cupgod" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 bg-neutral-950 hover:bg-neutral-900 border border-neutral-800 text-neutral-300 hover:text-white text-[11px] font-semibold rounded-full transition duration-300 text-center flex items-center justify-center gap-1.5">
+                  <span>Instagram DM ↗</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- RECHTS: Erklärungstext & Details (7 Spalten) -->
+        <div class="lg:col-span-7 space-y-4 text-left">
+          <div class="space-y-2">
+            <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-neutral-300 border border-white/20 text-[10px] font-mono uppercase tracking-wider">
+              Exklusiver Access
+            </span>
+            <h4 class="text-lg sm:text-xl font-bold text-white tracking-tight">Direkte Line & Unreleased Content</h4>
+            <p class="text-xs text-neutral-400 font-light leading-relaxed">
+              <span class="lang-de">Kein Spam. Nur echte Updates, exklusive Einblicke vor allen anderen und der direkte Weg für Kollaborationen, Features oder geschäftliche Anfragen.</span>
+              <span class="lang-en hidden">No spam. Only real updates, early insights before anyone else, and direct contact for collaborations or inquiries.</span>
+            </p>
           </div>
 
+          <!-- Feature Points -->
+          <div class="grid grid-cols-2 gap-3 pt-2 text-[11px] font-mono text-neutral-400">
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+              <span>Early Snippets</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+              <span>Direct Booking</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+              <span>Presale Access</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+              <span>Collab Inquiries</span>
+            </div>
+          </div>
         </div>
 
       </div>
