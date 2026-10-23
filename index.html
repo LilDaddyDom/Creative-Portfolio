@@ -3,8 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lil Dom | Visuals & Sound</title>
 
+  <!-- Seitentitel im Browser-Tab -->
+  <title>Lil Dom — Official Portfolio & Visual World</title>
+  
+  <!-- Standard Google/SEO Meta Tags -->
+  <meta name="description" content="Official Portfolio of Lil Dom — Music Releases, Visuals, Creative Direction & Inner Circle.">
+  <meta name="author" content="Lil Dom">
+
+  <!-- Open Graph / Social Media Preview (WhatsApp, iMessage, Instagram DMs, X) -->
+  <meta property="og:title" content="Lil Dom — Official Portfolio">
+  <meta property="og:description" content="Visuals, Music Releases, Creative Direction & Inner Circle.">
+  <meta property="og:image" content="https://deine-domain.de/og_preview.jpg">
+  <meta property="og:url" content="https://deine-domain.de">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon (Kleine Icon im Tab) -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -724,6 +740,33 @@
         </div>
 
       </div>
+
+      <!-- EPK Download Card (Ideal für die #about oder #inquiries Sektion) -->
+    <div class="bg-neutral-900/40 border border-neutral-800/80 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-lg group hover:border-neutral-700 transition duration-300">
+      
+      <div class="space-y-1 max-w-md">
+        <div class="flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded-full bg-white/10 text-neutral-300 text-[10px] font-mono uppercase tracking-wider border border-white/10">
+            Press & Media
+          </span>
+          <span class="text-xs text-neutral-500 font-mono">ZIP / PDF</span>
+        </div>
+        <h4 class="text-sm font-bold text-white tracking-tight">Electronic Press Kit (EPK)</h4>
+        <p class="text-xs text-neutral-400 font-light leading-relaxed">
+          <span class="lang-de">Pressefotos in HD, Bio, Logos, Tech-Rider & Release-Übersicht für Veranstalter und Medien.</span>
+          <span class="lang-en hidden">High-res press photos, bio, logos, tech rider & release overview for promoters and media.</span>
+        </p>
+      </div>
+
+      <!-- Download Button (Link zu deiner ZIP-Datei oder Google Drive/Dropbox) -->
+      <a href="assets/Lil_Dom_EPK_2026.zip" download class="w-full sm:w-auto px-5 py-2.5 bg-neutral-950 hover:bg-neutral-900 border border-neutral-800 hover:border-neutral-700 text-neutral-200 hover:text-white text-xs font-semibold rounded-xl transition duration-300 flex items-center justify-center gap-2 shrink-0">
+        <svg class="w-4 h-4 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+        </svg>
+        <span>Download EPK ↗</span>
+      </a>
+
+    </div>
 
     </section>
 
